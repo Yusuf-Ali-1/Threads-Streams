@@ -29,6 +29,7 @@ public class Main {
         // currentThread().getId() will access the id of the thread below
         new Thread(task).start();
 
+        //custom thread class
         (new HelloThread()).start();
 
     }
