@@ -37,7 +37,7 @@ public class Main {
 
 
         // Sleep Message
-        String importantInfo[] = {
+        String[] importantInfo = {
                 "Mares eat oats",
                 "Does eat oats",
                 "Little lambs eat ivy",
@@ -54,7 +54,8 @@ public class Main {
             @Override
             public void run() {
 
-                for (int i = 0; i < importantInfo.length; i++) {
+                //enhanced for loop
+                for (String s : importantInfo) {
                     // Pause for 4 seconds
                     try {
                         Thread.sleep(4000);
@@ -64,7 +65,7 @@ public class Main {
                         return;
                     }
                     // Print a message
-                    System.out.println(importantInfo[i]);
+                    System.out.println(s);
                 }
 
             }
