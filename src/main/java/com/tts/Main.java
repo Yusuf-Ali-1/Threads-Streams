@@ -1,5 +1,8 @@
 package com.tts;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
     //this main method is known as our entry point
     // but in fact, it's also known as our main thread
@@ -41,11 +44,28 @@ public class Main {
                 "A kid will eat ivy too"
         };
 
+        // List is an interface
+        // this is a form of polymorphism
+        // List<Integer> myList = new ArrayList<>();
+        // Interruption of threads
         // below is an anonymous inner class
         // you can only make lambdas from runnable interfaces
         Runnable messageTask = new Runnable() {
             @Override
             public void run() {
+
+                for (int i = 0; i < importantInfo.length; i++) {
+                    // Pause for 4 seconds
+                    try {
+                        Thread.sleep(4000);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                        // We've been interrupted: no more messages.
+                        return;
+                    }
+                    // Print a message
+                    System.out.println(importantInfo[i]);
+                }
 
             }
         };
@@ -59,9 +79,9 @@ public class Main {
 
         }
 
-        // Interruption of threads
 
 
+        (new Thread(messageTask)).start();
 
 
     }
