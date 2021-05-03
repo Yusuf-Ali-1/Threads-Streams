@@ -23,6 +23,7 @@ public class Main {
         // we can use lambda expressions to implement its method
         Runnable task = () ->
             System.out.println("Hello from a lambda! Here is the thread's id: "
+                    // This is how we would get the Thread's id
             + Thread.currentThread().getId());
         new Thread(task).start();
 
