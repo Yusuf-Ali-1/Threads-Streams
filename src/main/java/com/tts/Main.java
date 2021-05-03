@@ -22,7 +22,7 @@ public class Main {
         // Keep in mind that Runnable is a functional interface
         // we can use lambda expressions to implement its method
         Runnable task = () ->
-            System.out.println("Hello from a lambda! Here is the thread's id: "
+            System.out.println("Hello from a lambda!The thread's id is: "
                     // This is how we would get the Thread's id
             + Thread.currentThread().getId());
 
