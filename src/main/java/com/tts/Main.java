@@ -12,11 +12,11 @@ public class Main {
         // we pass a runnable object into that instance
         // thread has a method called start() with it invokes
         // to begin the execution of our runnable
-
+        //
         new Thread (new HelloRunnable()).start();
 
+        //Second method to run thread
         Thread th = new Thread(new HelloRunnable());
-
         th.start();
 
     }
