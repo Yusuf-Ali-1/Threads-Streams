@@ -19,5 +19,10 @@ public class Main {
         Thread th = new Thread(new HelloRunnable());
         th.start();
 
+        // Third method to run thread
+        Runnable task = () ->
+            System.out.println("Hello from a lambda!");
+        new Thread(task).start();
+
     }
 }
