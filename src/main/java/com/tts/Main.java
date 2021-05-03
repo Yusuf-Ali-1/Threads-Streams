@@ -15,5 +15,9 @@ public class Main {
 
         new Thread (new HelloRunnable()).start();
 
+        Thread th = new Thread(new HelloRunnable());
+
+        th.start();
+
     }
 }
