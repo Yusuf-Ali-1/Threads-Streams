@@ -15,7 +15,7 @@ public class SimpleThreads {
     private static class MessageLoop
             implements Runnable {
         public void run() {
-            String importantInfo[] = {
+            String[] importantInfo = {
                     "Mares eat oats",
                     "Does eat oats",
                     "Little lambs eat ivy",
@@ -34,7 +34,7 @@ public class SimpleThreads {
         }
     }
 
-    public static void main(String args[])
+    public static void main(String[] args)
             throws InterruptedException {
 
         // Delay, in milliseconds before
