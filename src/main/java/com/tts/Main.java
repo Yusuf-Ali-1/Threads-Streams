@@ -41,14 +41,27 @@ public class Main {
                 "A kid will eat ivy too"
         };
 
+        // below is an anonymous inner class
+        // you can only make lambdas from runnable interfaces
+        Runnable messageTask = new Runnable() {
+            @Override
+            public void run() {
+
+            }
+        };
 
         for (int i = 0; i < importantInfo.length; i++) {
             // I want to pause the executing thread
-            //Pause for 4 seconds
+            //Pause for 4 seconds = 4000 milliseconds
             Thread.sleep(4000);
-            //Print a message
+            //Print a message after the pause
             System.out.println(importantInfo[i]);
+
         }
+
+        // Interruption of threads
+
+
 
 
     }
