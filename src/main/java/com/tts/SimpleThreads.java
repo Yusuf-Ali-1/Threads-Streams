@@ -34,8 +34,7 @@ public class SimpleThreads {
         }
     }
 
-    public static void main(String[] args)
-            throws InterruptedException {
+    public static void main(String[] args) throws InterruptedException {
 
         // Delay, in milliseconds before
         // we interrupt MessageLoop
