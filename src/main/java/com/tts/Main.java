@@ -4,7 +4,7 @@ public class Main {
     //this main method is known as our entry point
     // but in fact, it's also known as our main thread
     // The main thread has the ability to create additional threads
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
         System.out.println("Hello world, I'm in a main thread!");
 
@@ -31,6 +31,25 @@ public class Main {
 
         //custom thread class
         (new HelloThread()).start();
+
+
+        // Sleep Message
+        String importantInfo[] = {
+                "Mares eat oats",
+                "Does eat oats",
+                "Little lambs eat ivy",
+                "A kid will eat ivy too"
+        };
+
+
+        for (int i = 0; i < importantInfo.length; i++) {
+            // I want to pause the executing thread
+            //Pause for 4 seconds
+            Thread.sleep(4000);
+            //Print a message
+            System.out.println(importantInfo[i]);
+        }
+
 
     }
 }
