@@ -34,6 +34,9 @@ public class SimpleThreads {
         }
     }
 
+
+    // Our main thread can accept a CLI argument
+    // Here our argument will represent seconds
     public static void main(String[] args) throws InterruptedException {
 
         // Delay, in milliseconds before
