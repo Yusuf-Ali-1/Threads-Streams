@@ -25,6 +25,8 @@ public class Main {
             System.out.println("Hello from a lambda! Here is the thread's id: "
                     // This is how we would get the Thread's id
             + Thread.currentThread().getId());
+
+        // currentThread().getId() will access the id of the thread below
         new Thread(task).start();
 
     }
