@@ -6,7 +6,7 @@ public class Main {
     // The main thread has the ability to create additional threads
     public static void main(String[] args) {
 
-        System.out.println("Hello world, I'm in a main thread");
+        System.out.println("Hello world, I'm in a main thread!");
 
         // We create a new Thread instance
         // we pass a runnable object into that instance
@@ -28,6 +28,8 @@ public class Main {
 
         // currentThread().getId() will access the id of the thread below
         new Thread(task).start();
+
+        (new HelloThread()).start();
 
     }
 }
