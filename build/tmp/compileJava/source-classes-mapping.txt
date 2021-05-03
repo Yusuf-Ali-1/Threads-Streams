@@ -8,3 +8,13 @@ com/tts/Main.java
 com/tts/SimpleThreads.java
  com.tts.SimpleThreads
  com.tts.SimpleThreads$MessageLoop
+com/tts/lambda/MyLambda.java
+ com.tts.lambda.MyLambda
+com/tts/lambda/Main.java
+ com.tts.lambda.Main
+ com.tts.lambda.Main$1
+com/tts/Deadlock.java
+ com.tts.Deadlock
+ com.tts.Deadlock$1
+ com.tts.Deadlock$2
+ com.tts.Deadlock$Friend
