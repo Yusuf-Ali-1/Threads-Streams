@@ -19,7 +19,9 @@ public class Main {
         Thread th = new Thread(new HelloRunnable());
         th.start();
 
-        // Third method to run thread
+        // Third method to run thread using lambda
+        // Keep in mind that Runnable is a functional interface
+        // we can use lambda expressions to implement its method
         Runnable task = () ->
             System.out.println("Hello from a lambda!");
         new Thread(task).start();
