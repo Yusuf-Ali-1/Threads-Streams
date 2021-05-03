@@ -4,7 +4,7 @@ public class HelloThread extends Thread{
 
     @Override
     public void run(){
-        System.out.println("Hello from a custom thread class! The thread's id is: "
+        System.out.println("Hello from a custom thread class! Thread's id: "
         + Thread.currentThread().getId());
     }
 }
